@@ -5,7 +5,7 @@ import random
 # The player guesses until they get it right, with hints after each guess.
 # The game tracks all guesses and lets the player replay.
 
-def get_guess():
+def get_guess(previous_guesses):
     # Prompt the player for a valid integer guess
     # Rejects non-numeric input and duplicate guesses
     valid = False
