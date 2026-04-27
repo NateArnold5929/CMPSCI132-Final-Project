@@ -7,7 +7,7 @@ import random
 
 def get_guess(previous_guesses):
     # Prompt the player for a valid integer guess
-    # Rejects non-numeric input and duplicate guesses
+    # Rejects invalid inputs and duplicate guesses
     valid = False
     guess = 0
     while valid == False:
