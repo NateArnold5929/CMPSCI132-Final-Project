@@ -43,3 +43,22 @@ def play_game():
             print(f"The number was {secret_number}.")
             print(f"Your guesses: {previous_guesses}")
             print(f"It took you {attempts} attempts.")
+
+def main():
+    # Main function - runs the game and handles replay
+    print("=" * 40)
+    print("   Welcome to the Number Guessing Game!")
+    print("=" * 40)
+
+    play_again = "yes"
+    while play_again == "yes" or play_again == "y":
+        play_game()
+
+        play_again = input("\nPlay again? (yes/no): ").lower()
+        while play_again != "yes" and play_again != "y" and play_again != "no" and play_again != "n":
+            print("Please enter yes or no.")
+            play_again = input("Play again? (yes/no): ").lower()
+
+    print("\nThanks for playing. Goodbye!")
+
+main()
