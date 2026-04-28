@@ -19,7 +19,7 @@ A terminal-based number guessing game written in Python. The computer generates 
 
 ## Project Description
 
-This is a final project for CMPSC 132 at Penn State University. The program is organized into three functions:
+The program is organized into three functions:
 
 - get_guess(previous_guesses) handles user input, validates that it is numeric, and prevents duplicate guesses
 - play_game() runs a single round of the game, tracks guesses in a list, and displays results when the player wins
